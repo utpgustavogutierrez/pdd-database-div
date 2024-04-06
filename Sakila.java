@@ -9,6 +9,7 @@ public class Sakila {
         try {
             Singleton singleton = Singleton.getInstance();
             Singleton singleton2 = Singleton.getInstance();
+            //Se evidencian que las direcciones de memoria son las mismas por lo tanto singleton funciona
             System.out.println(singleton);
             System.out.println(singleton2);
             try (Statement statement = singleton.getStatement()) {
